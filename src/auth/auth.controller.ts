@@ -11,12 +11,13 @@ export class AuthController {
     async signIn(@Res() response: Response, @Body() signInDto: SignInDto): Promise<Response> {
         const { login, password } = signInDto;
 
-        const { flag, message, token } = await this.authService.signIn(login, password);
+        const { flag, message, token, userInfo } = await this.authService.signIn(login, password);
 
         if (flag) {
             return response.status(200).json({
                 message,
-                token
+                token,
+                userInfo
             });
         }
 

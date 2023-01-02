@@ -47,7 +47,12 @@ export class AuthService {
                 return {
                     flag: true,
                     message: "Usuário logado com sucesso.",
-                    token
+                    token,
+                    userInfo: {
+                        id: user.id,
+                        name: user.name,
+                        login: user.login
+                    }
                 }
             }
         }

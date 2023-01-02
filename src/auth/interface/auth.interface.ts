@@ -1,7 +1,14 @@
+interface UserInfo {
+    id: number;
+    name: string;
+    login: string;
+}
+
 export interface ISignInSignUp {
     flag: boolean;
     message: string;
     token?: string;
+    userInfo?: UserInfo
 }
 
 export interface IJwtPayload {

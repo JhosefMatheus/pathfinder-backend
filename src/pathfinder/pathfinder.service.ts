@@ -1,14 +1,93 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/prisma/prisma.service";
-import { Pathfinder } from "@prisma/client";
+import { Pathfinder, Prisma, User } from "@prisma/client";
+import { ICreateDeletePathfinder } from "./interface";
 
 @Injectable()
 export class PathfinderService {
     constructor(private readonly prismaService: PrismaService) {}
 
-    async getPathfinders(): Promise<Pathfinder[]> {
-        const pathfinders: Pathfinder[] = await this.prismaService.pathfinder.findMany();
+    async getPathfinders(userId: string): Promise<Pathfinder[]> {
+        const pathfinders: Pathfinder[] = await this.prismaService.pathfinder.findMany({
+            where: {
+                userId: {
+                    equals: parseInt(userId)
+                }
+            }
+        });
 
         return pathfinders;
+    }
+
+    async createPathfinder(userId: string, pathfinderName: string): Promise<ICreateDeletePathfinder> {
+        try {
+            const user: User = await this.prismaService.user.findFirstOrThrow({
+                where: {
+                    id: {
+                        equals: parseInt(userId)
+                    }
+                }
+            });
+
+            await this.prismaService.pathfinder.create({
+                data: {
+                    name: pathfinderName,
+                    userId: user.id
+                }
+            });
+
+            return {
+                flag: true,
+                message: "Desbravador cadastrado com sucesso."
+            }
+        } catch (error) {
+            if (error instanceof Prisma.NotFoundError) {
+                return {
+                    flag: false,
+                    message: "Usuário inexistente."
+                }
+            }
+        }
+    }
+
+    async deletePathfinder(userId: string, pathfinderId: string): Promise<ICreateDeletePathfinder> {
+        let user: User;
+        
+        try {
+            user = await this.prismaService.user.findFirstOrThrow({
+                where: {
+                    id: {
+                        equals: parseInt(userId)
+                    }
+                }
+            });
+        } catch (error) {
+            return {
+                flag: false,
+                message: "Usuário inexistente."
+            }
+        }
+
+        try {
+            await this.prismaService.pathfinder.delete({
+                where: {
+                    id: parseInt(pathfinderId)
+                }
+            });
+
+            return {
+                flag: true,
+                message: "Desbravador deletado com sucesso."
+            }
+        } catch (error) {
+            if (error instanceof Prisma.PrismaClientKnownRequestError) {
+                if (error.code === "P2025") {
+                    return {
+                        flag: false,
+                        message: "Desbravador inexistente."
+                    }
+                }
+            }
+        }
     }
 }
