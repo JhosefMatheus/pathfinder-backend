@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/prisma/prisma.service";
 import { Pathfinder, Prisma, User } from "@prisma/client";
-import { ICreateDeletePathfinder } from "./interface";
+import { ICrudPathfinder } from "./interface";
 
 @Injectable()
 export class PathfinderService {
@@ -19,7 +19,7 @@ export class PathfinderService {
         return pathfinders;
     }
 
-    async createPathfinder(userId: string, pathfinderName: string): Promise<ICreateDeletePathfinder> {
+    async createPathfinder(userId: string, pathfinderName: string): Promise<ICrudPathfinder> {
         try {
             const user: User = await this.prismaService.user.findFirstOrThrow({
                 where: {
@@ -50,7 +50,7 @@ export class PathfinderService {
         }
     }
 
-    async deletePathfinder(userId: string, pathfinderId: string): Promise<ICreateDeletePathfinder> {
+    async deletePathfinder(userId: string, pathfinderId: string): Promise<ICrudPathfinder> {
         let user: User;
         
         try {
@@ -62,9 +62,11 @@ export class PathfinderService {
                 }
             });
         } catch (error) {
-            return {
-                flag: false,
-                message: "Usuário inexistente."
+            if (error instanceof Prisma.NotFoundError) {
+                return {
+                    flag: false,
+                    message: "Usuário inexistente."
+                }
             }
         }
 
@@ -86,6 +88,101 @@ export class PathfinderService {
                         flag: false,
                         message: "Desbravador inexistente."
                     }
+                }
+            }
+        }
+    }
+
+    async editPathfinder(userId: string, pathfinderId: string, pathfinderName: string): Promise<ICrudPathfinder> {
+        let user: User;
+
+        try {
+            user = await this.prismaService.user.findFirstOrThrow({
+                where: {
+                    id: {
+                        equals: parseInt(userId)
+                    }
+                }
+            });
+        } catch (error) {
+            if (error instanceof Prisma.NotFoundError) {
+                return {
+                    flag: false,
+                    message: "Usuário inexistente."
+                }
+            }
+        }
+
+        try {
+            await this.prismaService.pathfinder.update({
+                data: {
+                    name: pathfinderName
+                },
+                where: {
+                    id: parseInt(pathfinderId)
+                }
+            });
+
+            return {
+                flag: true,
+                message: "Desbravador atualizado com sucesso."
+            }
+        } catch (error) {
+            if (error instanceof Prisma.PrismaClientKnownRequestError) {
+                if (error.code === "P2025") {
+                    return {
+                        flag: false,
+                        message: "Desbravador inexistente."
+                    }
+                }
+            }
+        }
+    }
+
+    async getPathfinder(userId: string, pathfinderId: string): Promise<ICrudPathfinder> {
+        let user: User, pathfinder: Pathfinder;
+
+        try {
+            user = await this.prismaService.user.findFirstOrThrow({
+                where: {
+                    id: {
+                        equals: parseInt(userId)
+                    }
+                }
+            });
+        } catch (error) {
+            if (error instanceof Prisma.NotFoundError) {
+                return {
+                    flag: false,
+                    message: "Usuário inexistente."
+                }
+            }
+        }
+
+        try {
+            pathfinder = await this.prismaService.pathfinder.findFirstOrThrow({
+                where: {
+                    AND: {
+                        id: {
+                            equals: parseInt(pathfinderId)
+                        },
+                        userId: {
+                            equals: user.id
+                        }
+                    }
+                }
+            });
+            
+            return {
+                flag: true,
+                message: "Desbravador encontrado com sucesso.",
+                pathfinder
+            }
+        } catch(error) {
+            if (error instanceof Prisma.NotFoundError) {
+                return {
+                    flag: false,
+                    message: "Desbravador inexistente."
                 }
             }
         }

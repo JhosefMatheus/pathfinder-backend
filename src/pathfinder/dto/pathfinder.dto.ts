@@ -1,6 +1,6 @@
 import { IsNotEmpty } from "class-validator";
 
-export class CreatePathfinderDto {
+export class CreateEditPathfinderDto {
     @IsNotEmpty()
     pathfinderName: string;
 }

@@ -24,3 +24,41 @@ model Pathfinder {
   userId Int
   user User @relation(fields: [userId], references: [id])
 }
+
+model Class {
+  id Int @id @default(autoincrement())
+  name String
+  figure String
+  requirements Requirement[]
+}
+
+model RequirementGroup {
+  id Int @id @default(autoincrement())
+  name String
+  requirements Requirement[]
+}
+
+model Requirement {
+  id Int @id @default(autoincrement())
+  content String @db.Text
+  requirementGroupId Int
+  classId Int
+  requirementGroup RequirementGroup @relation(fields: [requirementGroupId], references: [id])
+  class Class @relation(fields: [classId], references: [id])
+  subrequirements Subrequirement[]
+}
+
+model SubrequirementType {
+  id Int @id @default(autoincrement())
+  type String
+  subrequirements Subrequirement[]
+}
+
+model Subrequirement {
+  id Int @id @default(autoincrement())
+  content String @db.Text
+  subrequirementTypeId Int
+  requirementId Int
+  subrequirementType SubrequirementType @relation(fields: [subrequirementTypeId], references: [id])
+  requirement Requirement @relation(fields: [requirementId], references: [id])
+}
