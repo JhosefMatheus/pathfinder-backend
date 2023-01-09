@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
-import { Class, Prisma, Requirement, RequirementGroup } from "@prisma/client";
+import { Class, Prisma, Requirement, RequirementGroup, Subrequirement } from "@prisma/client";
 import { PrismaService } from "src/prisma/prisma.service";
-import { IGetClassData, IGetRequirementsData } from "./interface";
+import { IGetClassData, IGetRequirementsData, IGetSubRequirementsData } from "./interface";
 
 @Injectable()
 export class ClassService {
@@ -74,6 +74,31 @@ export class ClassService {
             return {
                 flag: false,
                 message: "Requisitos não encontrados."
+            }
+        }
+    }
+
+    async getSubRequirements(requirementId: string): Promise<IGetSubRequirementsData> {
+        try {
+            const subRequirements: Subrequirement[] = await this.prismaService.subrequirement.findMany({
+                where: {
+                    requirementId: {
+                        equals: parseInt(requirementId)
+                    }
+                }
+            });
+
+            return {
+                flag: true,
+                message: "Sub-requisitos encontrado.",
+                subRequirements
+            }
+        } catch(error) {
+            console.log(error);
+
+            return {
+                flag: false,
+                message: "Sub-requisitos não encontrados."
             }
         }
     }

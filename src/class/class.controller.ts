@@ -3,7 +3,7 @@ import { AuthGuard } from "@nestjs/passport";
 import { RequirementGroup } from "@prisma/client";
 import { Response } from "express";
 import { ClassService } from "./class.service";
-import { IGetClassDataParams, IGetRequirementsParams } from "./interface";
+import { IGetClassDataParams, IGetRequirementsParams, IGetSubRequirementParams } from "./interface";
 
 @UseGuards(AuthGuard("jwt"))
 @Controller("class")
@@ -38,6 +38,24 @@ export class ClassController {
             return response.status(200).json({
                 message,
                 requirements
+            });
+        }
+
+        return response.status(401).json({
+            message
+        });
+    }
+
+    @Get("/classes/subRequirements/:requirementId")
+    async getSubRequirements(@Res() response: Response, @Param() params: IGetSubRequirementParams): Promise<Response> {
+        const { requirementId } = params;
+
+        const { flag, message, subRequirements } = await this.classService.getSubRequirements(requirementId);
+
+        if (flag) {
+            return response.status(200).json({
+                message,
+                subRequirements
             });
         }
 

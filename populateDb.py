@@ -385,7 +385,434 @@ friend_requirements = {
     ]
 }
 
-companion_requirements = {}
+companion_requirements = {
+    "requirements": [
+        {
+            "content": "Ter, no mínimo, 11 anos de idade.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Ser membro ativo do Clube de Desbravadores.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Ilustrar de forma criativa o significado do Voto do Desbravador.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Ler o livro do Clube de Leitura do ano em curso e escrever um parágrafo sobre o que mais lhe chamou atenção ou considerou importante.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Ler o livro Caminho a Cristo.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Participar ativamente da classe bíblica do seu clube.",
+            "requirementGroupId": 1,
+            "classId": 2
+        },
+        {
+            "content": "Memorizar e demonstrar o seu conhecimento:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "10 Mandamentos: A Lei de Deus dada a Moisés.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "27 livros do Novo Testamento e demonstrar habilidade para encontrar qualquer um deles.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Memorizar e recitar os versos abaixo:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Isa. 41:9-10",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Heb. 13:5",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Prov. 22:6",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 João 1:9",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Salmo 8",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Leitura bíblica:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Lv 11",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Nm 9:15-23, 11, 12, 13, 14:1-38, 16, 17, 20:1-13; 22-29, 21:4-9, 22, 23; 24:1-10",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Dt 1:1-17; 4:1-8, 32:1-43, 33, 34",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Js 1, 2, 3, 4, 5:10; 6, 7, 9, 24:1-15; 29",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jz 6, 7, 13:1-18; 14, 15, 16",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Rt 1, 2, 3, 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Sm 1, 2, 3, 4, 5, 6, 8, 9, 10, 11:12-15, 12, 13, 15, 16, 17, 18:1-19, 20, 21:1-7; 22, 24, 25, 26, 31",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Sm 1, 5, 6, 7, 9, 11; 12:1-25, 15, 18",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Em consulta com o seu conselheiro, escolher um dos seguintes temas:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Uma parábola de Jesus",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Um milagre de Jesus",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "O Sermão da Montanha",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Um sermão sobre a segunda vinda de Cristo",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Escolher um item abaixo para demonstrar seu conhecimento sobre o tema escolhido:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Troca de ideias com o seu conselheiro",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividade que integre todo o grupo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Redação",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Planejar e dedicar pelo menos duas horas servindo sua comunidade e demonstrando companheirismo a alguém, de maneira prática.",
+            "requirementGroupId": 3,
+            "classId": 2
+        },
+        {
+            "content": "Participar de um projeto que beneficiará sua comunidade ou igreja.",
+            "requirementGroupId": 3,
+            "classId": 2
+        },
+        {
+            "content": "Conversar com seu conselheiro ou unidade sobre como respeitar pessoas de diferentes culturas, raças e sexo.",
+            "requirementGroupId": 4,
+            "classId": 2
+        },
+        {
+            "content": "Memorizar e explicar 1 Coríntios 9:24-27.",
+            "requirementGroupId": 5,
+            "classId": 2
+        },
+        {
+            "content": "Conversar com seu líder sobre a aptidão física e os exercícios físicos regulares que se relacionam com uma vida saudável.",
+            "requirementGroupId": 5,
+            "classId": 2
+        },
+        {
+            "content": "Aprender sobre os prejuízos que o cigarro causa à saúde e escrever seu compromisso de não fazer uso do fumo.",
+            "requirementGroupId": 5,
+            "classId": 2
+        },
+        {
+            "content": "Completar uma das seguintes especialidades:",
+            "requirementGroupId": 5,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Natação principiante 2",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Acampamento 2",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Dirigir ou colaborar em uma meditação criativa para sua unidade ou Clube.",
+            "requirementGroupId": 6,
+            "classId": 2
+        },
+        {
+            "content": "Ajudar no planejamento de excursão ou acampamento com sua unidade ou clube, envolvendo pelo menos um pernoite.",
+            "requirementGroupId": 6,
+            "classId": 2
+        },
+        {
+            "content": "Completar duas das seguintes especialidades:",
+            "requirementGroupId": 7,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Anfíbios",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Aves",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Aves domésticas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Pecuária",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Reptéis",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Moluscos",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Árvores",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Arbustos",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Recapitular o estudo da Criação e fazer um diário por sete dias registrando suas observações do que foi criado em cada dia correspondente.",
+            "requirementGroupId": 7,
+            "classId": 2
+        },
+        {
+            "content": "Descobrir os pontos cardeais sem a ajuda de uma bússola e desenhar a Rosa dos Ventos.",
+            "requirementGroupId": 8,
+            "classId": 2
+        },
+        {
+            "content": "Participar de um acampamento de final de semana e fazer um relatório destacando o que mais lhe impressionou positivamente.",
+            "requirementGroupId": 8,
+            "classId": 2
+        },
+        {
+            "content": "Aprender ou recapitular os seguintes nós:",
+            "requirementGroupId": 8,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Oito",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Volta do salteador",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Duplo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Caminhoneiro",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Direito",
+                    "subRequirementTypeId": 1,
+                },
+                {
+                    "content": "Volta do Fiel",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Escota",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Lais de Guia",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Simples",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar uma especialidade não realizada anteriorment na seção de Artes e habilidades manuais.",
+            "requirementGroupId": 9,
+            "classId": 2
+        },
+        {
+            "content": "Aprender e demonstrar a composição, significado e uso correto da Bandeira Nacional.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Ler a primeira visão de Ellen White e discutir como Deus usa os profetas para apresentar Sua mensagem à igreja (ver Primeiros Escritos, p. 13 a 20).",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Participar de uma atividade missionária ou comunitária, envolvendo também um amigo.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Conversar com seu conselheiro ou unidade sobre como demonstrar respeito pelos seus pais ou responsáveis e fazer uma lista mostrando como cuidam de você.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Participar de uma caminhada de 6 quilômetros, preparand, ao final, um relatório de uma página.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Escolher um dos seguintes itens:",
+            "requirementGroupId": 10,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Assistir a um Curso como deixar de fumar",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Assistir a dois filmes sobre saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Elaborar um cartaz sobre o prejuízo das drogas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ajudar a preparar material para uma exposição ou passeata sobre saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Pesquisar na internet informações sobre saúde e escrever uma página sobre os resultados encontrados",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Identificar e descrever 12 aves nativas e 12 árvores nativas.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Participar de uma das seguintes cerimônias e sugerir ideias criativas e como realizá-las.",
+            "requirementGroupId": 10,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Investidura",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Admissão em lenço",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Dia Mundial do Desbravador",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Preparar uma refeição em uma fogueira durante um acampamento do clube ou unidade.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Preparar um quadro com 15 nós diferentes.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Completar a especialidade de Excursionismo pedestre com mochila.",
+            "requirementGroupId": 10,
+            "classId": 2
+        },
+        {
+            "content": "Completar uma especialidade não realizada anteriormente.",
+            "requirementGroupId": 10,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Habilidades domésticas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ciência e saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades missionárias e comunitárias",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades agrícolas e afins",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        }
+    ]
+}
 
 researcher_requirements = {}
 
@@ -455,4 +882,4 @@ def populate_db(connection, db_data):
         print(f"error line: {exc_tb.tb_lineno}")
 
 
-populate_db(connection, db_data)
+populate_db(connection, companion_requirements)
