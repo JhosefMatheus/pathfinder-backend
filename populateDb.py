@@ -814,7 +814,425 @@ companion_requirements = {
     ]
 }
 
-researcher_requirements = {}
+researcher_requirements = {
+    "requirements": [
+        {
+            "content": "Ter, no mínimo, 12 anos de idade.",
+            "requirementGroupId": 1,
+            "classId": 3
+        },
+        {
+            "content": "Ser membro ativo do Clube de Desbravadores.",
+            "requirementGroupId": 1,
+            "classId": 3
+        },
+        {
+            "content": "Demonstrar sua compreensão do significado da Lei do Desbravador através de uma das seguintes atividades.",
+            "requirementGroupId": 1,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Representação",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Debate",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Redação",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Ler o livro do Clube de Leitura do ano em curso e escrever dois parágrafos sobre o que mais lhe chamou atenção ou considerou importante.",
+            "requirementGroupId": 1,
+            "classId": 3
+        },
+        {
+            "content": "Ler o livro Além da Magia.",
+            "requirementGroupId": 1,
+            "classId": 3
+        },
+        {
+            "content": "Participar ativamente da classe bíblica do seu clube.",
+            "requirementGroupId": 1,
+            "classId": 3
+        },
+        {
+            "content": "Memorizar e demonstrar o seu conhecimento:",
+            "requirementGroupId": 2,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Levítico 11: Quais as regras dos alimentos considerados comestíveis e não comestíveis.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Ler e explicar os versos abaixos:",
+            "requirementGroupId": 2,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Ecles. 12:13-14",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Rom. 6:23",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Apoc. 1:3",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Isa. 43:1-2",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Salmo 51:10",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Salmo 16",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Leitura bíblica:",
+            "requirementGroupId": 2,
+            "classId": 3,
+            "suRequirements": [
+                {
+                    "content": "1 Rs 1:28-53, 3, 4:20-34, 5, 6, 8:12-60, 10, 11:6-43, 12, 16:29-33, 17:1-7, 17:8-24, 18, 19, 21",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Rs 2, 4:1-7, 4:8-41, 5, 6:1-23, 6:24-33, 7, 20, 22, 23:36-37, 24, 25:1-7",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Cr 24:1-14, 36",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ed 1, 3, 6:14-15",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ne 1, 2, 4, 8",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ester 1, 2, 3, 4, 5, 6, 7, 8",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jó 1, 2, 42",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Sl 1, 15, 19, 23, 24, 27, 37, 39, 42, 46, 67, 90, 91, 92, 97, 98, 100, 117, 119:1-176, 121, 125, 150",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Pv 1, 3, 4, 10, 15, 20, 25",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ec 1",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Conversar com seu líder e escolher uma das seguintes histórias:",
+            "requirementGroupId": 2,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "João 3 - Nicodemos",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "João 4 - A mulher samaritana",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Lucas 10 - O bom samaritano",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Lucas 19 - Zaqueu",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Através da história escolhida, demonstrar sua compreensão em como Jesus salva as pessoas, usando um dos métodos abaixo.",
+            "requirementGroupId": 2,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Conversar em grupo com a participação de seu líder",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Apresentar uma mensagem em uma reunião do Clube",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Fazer uma série de cartazes ou uma maquete",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Escrever uma poesia ou hino",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Conhecer os projetos comunitários desenvolvidos em sua cidade e participar em pelo menos um deles com sua unidade ou Clube.",
+            "requirementGroupId": 3,
+            "classId": 3
+        },
+        {
+            "content": "Participar em três atividades missionárias da igreja.",
+            "requirementGroupId": 3,
+            "classId": 3
+        },
+        {
+            "content": "Participar de um debate ou representação sobre a pressão de grupo e identificar a influência que isto exerce sobre suas decisões.",
+            "requirementGroupId": 4,
+            "classId": 3
+        },
+        {
+            "content": "Visitar um órgão público de sua cidade ou bairro e descobrir de que maneiras o clube pode ser útil à sua comunidade.",
+            "requirementGroupId": 4,
+            "classId": 3
+        },
+        {
+            "content": "Escolher uma das atividades abaixo e escrever um texto pessoal par aum estilo de vida livre do álcool:",
+            "requirementGroupId": 5,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Participar de uma discussão em classe sobre os efeitos do álcool no organismo.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Assistir a um vídeo sobre o efeito do álcool ou outras drogas no corpo humano e conversar sobre o assunto.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Dirigir uma cerimônia de abertura da reunião semanal em seu clube ou um programa de Escola Sabatina.",
+            "requirementGroupId": 6,
+            "classId": 3
+        },
+        {
+            "content": "Ajudar a organizar a classe bíblica do seu clube.",
+            "requirementGroupId": 6,
+            "classId": 3
+        },
+        {
+            "content": "Identificar a estrela Alfa da constelação do Centauro e a constelação de Ório. Conhecer o significado espiritual de Ório, como descrito no livro Primeiros Escritos, de Ellen White, pág. 41.",
+            "requirementGroupId": 7,
+            "classId": 3
+        },
+        {
+            "content": "Completar uma das especialidades a seguir:",
+            "requirementGroupId": 7,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Astronomia",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Cactos",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Climatologia",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Flores",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Rastreio de animais",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Apresentar seis segredos para um bom acampamento. Participar de um acampamento de final de semana, planejando e cozinhando duas refeições.",
+            "requirementGroupId": 8,
+            "classId": 3
+        },
+        {
+            "content": "Completar as seguintes especialidades.",
+            "requirementGroupId": 8,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Acampamento 3",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Primeiros socorros - básico",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Aprender a usar uma bússola ou um GPS (urbano ou campo), e demonstrar sua habilidade encontrando endereços em uma zona urbana.",
+            "requirementGroupId": 8,
+            "classId": 3
+        },
+        {
+            "content": "Completar uma especialidade, não realizada anteriormente, em Artes e habilidades manuais.",
+            "requirementGroupId": 9,
+            "classId": 3
+        },
+        {
+            "content": "Conhecer e saber usar de forma adequada a bandeira dos Desbravadores e o bandeirim de unidade e os comandos de ordem unida.",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Ler a história de J. N. Andrews ou um pioneiro de seu país e discutir a importância do trabalho de missionários, e por que Cristo ordenou a Grande Comissão (Mateus 28:18-20).",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Convidar uma pessoa para assitir um dos seguintes programas:",
+            "requirementGroupId": 10,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Clube de Desbravadores",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Classe bíblica",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Pequenos grupos",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Fazer uma das seguintes especialidades:",
+            "requirementGroupId": 10,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Asseio e cortesia cristã",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Vida familiar",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Participar de uma caminhada de 10 quilômetros e fazer uma lista dos equipamentos necessários, incluindo a roupa e o calçado que devem ser usados.",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Participar na organização d eum dos eventos especiais do Clube:",
+            "requirementGroupId": 10,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "investidura",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Admissão em lenço",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Dia Mundial do Desbravador",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Identificar seis pegadas de animais ou aves. Fazer um modelo em gesso, massa de modelar ou biscuit de três dessas pegadas.",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Aprender a fazer as quatro amarras básicas e construir um móvel de acampamento.",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Planejar um cardápio vegetariano para sua unidade, para um acampamento de 3 dias e apresentar ao seu instrutor.",
+            "requirementGroupId": 10,
+            "classId": 3
+        },
+        {
+            "content": "Enviar e receber uma mensagem através das formas de comunicação abaixo:",
+            "requirementGroupId": 10,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Alfabeto com semáforos",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Código Morse, com lanterna",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Alfabeto LIBRAS (língua brasileira de sinais)",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Alfabeto Braile",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar duas especialidades, não realizadas anteriormente, em uma das áreas abaixo:",
+            "requirementGroupId": 10,
+            "classId": 3,
+            "subRequirements": [
+                {
+                    "content": "Habilidades domésticas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ciência e saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades missionárias e comunitárias",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades agrícolas e afins",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        }
+    ]
+}
 
 pioneer_requirements = {}
 
@@ -882,4 +1300,4 @@ def populate_db(connection, db_data):
         print(f"error line: {exc_tb.tb_lineno}")
 
 
-populate_db(connection, companion_requirements)
+populate_db(connection, researcher_requirements)
