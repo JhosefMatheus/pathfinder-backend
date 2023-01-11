@@ -1234,7 +1234,401 @@ researcher_requirements = {
     ]
 }
 
-pioneer_requirements = {}
+pioneer_requirements = {
+    "requirements": [
+        {
+            "content": "Ter, no mínimo, 13 anos de idade.",
+            "requirementGroupId": 1,
+            "classId": 4
+        },
+        {
+            "content": "Ser membro ativo do Clube de Desbravadores.",
+            "requirementGroupId": 1,
+            "classId": 4
+        },
+        {
+            "content": "Memorizar e entender o Alvo e o Lema JA.",
+            "requirementGroupId": 1,
+            "classId": 4
+        },
+        {
+            "content": "Ler o livro do Clube de Leitura do ano em curso e resumi-lo em uma página.",
+            "requirementGroupId": 1,
+            "classId": 4
+        },
+        {
+            "content": "Ler o livro a história da vida.",
+            "requirementGroupId": 1,
+            "classId": 4
+        },
+        {
+            "content": "Memorizar e demonstrar o seu conhecimento:",
+            "requirementGroupId": 2,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Bem-Aventuranças: O Sermão da Montanha.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Ler e explicar os versos abaixo:",
+            "requirementGroupId": 2,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Isa. 26:3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Rom. 12:12",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "João 14:1-3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Sal. 37:5",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Filip. 3:12-14",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Salmo 23",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Sam. 15:22",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Conversar em seu clube ou unidade sobre:",
+            "requirementGroupId": 2,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "O que é o cristianismo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Quais são as características de um verdadeiro discípulo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "O que fazer para ser um cristão verdadeiro",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Participar de um estudo especial sobre a inspiração da Bíblia, com a ajuda de um pastor, trabalhando os conceitos de inspiração, revelação e iluminação.",
+            "requirementGroupId": 2,
+            "classId": 4
+        },
+        {
+            "content": "Convidar três ou mais pessoas para assistirem a uma classe bíblica ou pequeno grupo.",
+            "requirementGroupId": 2,
+            "classId": 4
+        },
+        {
+            "content": "Leitura Bíblica:",
+            "requirementGroupId": 2,
+            "classId": 2,
+            "subRequirements": [
+                {
+                    "content": "Ec 3, 5, 7, 11 e 12",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Is 5, 11, 26:1-12, 35, 40, 43, 52:13-15, 53, 58, 60, 61",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jr 9:23-26, 10:1-16, 18:1-6, 26, 36, 52:1-11",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Dn 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jl 2:12-31",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Am 7:10-16, 8:4-11",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jn 1, 2, 3 e 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Mq 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ag 2",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Zc 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ml 3 e 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Mt 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23",
+                    "subRequirementTypeId": 2
+                },
+            ]
+        },
+        {
+            "content": "Participar em dois projetos missionários definidos por seu Clube.",
+            "requirementGroupId": 3,
+            "classId": 4
+        },
+        {
+            "content": "Trabalhar em um projeto comunitário de sua igreja, escola ou comunidade.",
+            "requirementGroupId": 3,
+            "classId": 4
+        },
+        {
+            "content": "Participar de um debate e fazer uma avaliação pessoal sobre suas atitudes em dois dos seguintes temas:",
+            "requirementGroupId": 4,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Autoestima",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Amizade",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Relacionamentos",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Otimismo e pessimismo",
+                    "subRequirementTypeId": 1
+                },
+            ]
+        },
+        {
+            "content": "Preparar um programa pessoal de exercícios físicos diários e conversar com seu líder ou conselheiro sobre os princípios de aptidão física. Fazer e assinar um compromisso pessoal de realizar exercícios físicos regularmente.",
+            "requirementGroupId": 5,
+            "classId": 4
+        },
+        {
+            "content": "Discutir as vantagens do estilo de vida adventista de acordo com o que a Bíblia ensina.",
+            "requirementGroupId": 5,
+            "classId": 4
+        },
+        {
+            "content": "Assistir a um seminário ou treinamento, oferecido pela sua igreja ou distrito nos departamentos abaixo:",
+            "requirementGroupId": 6,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Ministério Pessoal",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Evangelismo",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Participar de uma atividade social de sua igreja.",
+            "requirementGroupId": 6,
+            "classId": 4
+        },
+        {
+            "content": "Estudar a história do dilúvio e estudar o processo de fossilização.",
+            "requirementGroupId": 7,
+            "classId": 4
+        },
+        {
+            "content": "Completar uma especialidade, não realizada anteriormente, em Estudo da natureza.",
+            "requirementGroupId": 7,
+            "classId": 4
+        },
+        {
+            "content": "Fazer um fogo refletor e demonstrar seu uso.",
+            "requirementGroupId": 8,
+            "classId": 4
+        },
+        {
+            "content": "Participar de um acampamento de final de semana, arrumando de forma apropriada sua bolsa ou mochila com o equipamento pessoal necessário.",
+            "requirementGroupId": 8,
+            "classId": 4
+        },
+        {
+            "content": "Completar a especialidade de Resgate básico.",
+            "requirementGroupId": 8,
+            "classId": 4
+        },
+        {
+            "content": "Completar uma especialidade não realizada anteriormente em uma das seguintes áreas:",
+            "requirementGroupId": 9,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Atividades missionárias e comunitárias",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades profissionais",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades agrícolas e afins",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar a especialidade de Cidadania cristã, caso não tenha sido realizada anteriormente.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Dar dois estudos bíblicos a uma pessoa não batizada na Igreja Adventista.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Encenar a história do bom samaritano, demonstrando como ajudar as pessoas e auxiliar de forma prática três pessoas ou mais.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Participar de uma das seguintes atividades, apresentando ao final um relatório escrito contendo no mínimo duas páginas:",
+            "requirementGroupId": 10,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Caminhar 10 quilômetros",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Cavalgar 2 quilômetros",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Viajar de canoa durante 2 horas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Praticar 15 quilômetros de ciclismo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Nadar 200 metros",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Correr 1500m",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Rodar 2 km de patins ou roller",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar a especialidade de Mapa e bússola.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Demonstrar habilidade no uso correto de uma machadinha.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Ser capaz de acender uma fogueira em dia de chuva, saber como conseguir lenha seca e manter o fogo aceso.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Completar um dos seguintes itens:",
+            "requirementGroupId": 10,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "Pesquisar e identificar dez variedades de plantas silvestres comestíveis.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ser capaz de enviar e receber 35 letras por minuto pelo código semafórico.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ser capaz de enviar e receber 35 letras por minuto através do código náutico, usando o código internacional.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ser capaz de apresentar e entender Mateus 24 em LIBRAS (língua brasileira de sinais).",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Preparar o salmo 23 em braile.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar uma especialidade, não realizada anteriormente, em Atividades recreativas.",
+            "requirementGroupId": 10,
+            "classId": 4
+        },
+        {
+            "content": "Pesquisar e identificar, através de fotografia, exposição ou ao vivo, um dos seguintes itens:",
+            "requirementGroupId": 10,
+            "classId": 4,
+            "subRequirements": [
+                {
+                    "content": "25 folhas de árvores",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "25 rochas e minerais",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "25 flores silvestres",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "25 borboletas e mariposas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "25 conchas",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar a especialidade de Fogueiras e cozinha ao ar livre.",
+            "requirementGroupId": 10,
+            "classId": 4
+        }
+    ]
+}
 
 hiker_requirements = {}
 
@@ -1300,4 +1694,4 @@ def populate_db(connection, db_data):
         print(f"error line: {exc_tb.tb_lineno}")
 
 
-populate_db(connection, researcher_requirements)
+populate_db(connection, pioneer_requirements)
