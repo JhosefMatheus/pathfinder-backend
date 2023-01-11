@@ -1630,7 +1630,320 @@ pioneer_requirements = {
     ]
 }
 
-hiker_requirements = {}
+hiker_requirements = {
+    "requirements": [
+        {
+            "content": "Ter, no mínimo, 14 anos de idade.",
+            "requirementGroupId": 1,
+            "classId": 5
+        },
+        {
+            "content": "Ser membro ativo do Clube de Desbravadores.",
+            "requirementGroupId": 1,
+            "classId": 5
+        },
+        {
+            "content": "Memorizar e explicar o significado do Objetivo JA.",
+            "requirementGroupId": 1,
+            "classId": 5
+        },
+        {
+            "content": "Ler o livro do Clube de Leitura do ano em curso e resumi-lo em uma página.",
+            "requirementGroupId": 1,
+            "classId": 5
+        },
+        {
+            "content": "Ler o livro Nos bastidores da mídia.",
+            "requirementGroupId": 1,
+            "classId": 5
+        },
+        {
+            "content": "Memorizar e demonstrar o seu conhecimento:",
+            "requirementGroupId": 2,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "12 Apóstolos: O nome dos 12 apóstolos de Cristo.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "O Fruto do Espírito: A relação de adjetivos do caráter do cristão.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Memorizar e recitar os versos abaixo:",
+            "requirementGroupId": 2,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Rom. 12:12",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Apoc. 21:1-3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Ped. 1:20-21",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 João 2:14",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Cro. 20:20",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Salmo 46",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Estudar e entender a pessoa do Espírito Santo, como Ele se relaciona, e qual o Seu papel no crescimento espiritual de cada ser humano.",
+            "requirementGroupId": 2,
+            "classId": 5
+        },
+        {
+            "content": "Estude, com a sua unidade, os eventos finais e a segunda vinda de Cristo.",
+            "requirementGroupId": 2,
+            "classId": 5
+        },
+        {
+            "content": "Através do estudo da Bíblia, descobrir o verdadeiro significado da observância do sábado.",
+            "requirementGroupId": 2,
+            "classId": 5
+        },
+        {
+            "content": "Leitura bíblica",
+            "requirementGroupId": 2,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Mt 24, 25, 26:1-35, 26:36-75, 27:1-31, 27:32-56, 27:57-66, 28",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Mc 7, 9, 10, 11, 12, 16",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Lc 1:4-25, 1:26-66, 2:21-38, 2:39-52, 7:18-28, 8, 10:1-37, 10:38-42, 11:1-13, 12, 13, 14, 15, 16:1-17, 17, 18, 19, 21, 22, 23, 24",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Jo 1, 2, 3, 4, 5, 6:1-21, 6:22-71, 8:1-38, 9, 10, 11:1-46, 12, 13, 14, 15, 17, 18, 19, 20, 21",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "At 1, 2, 3, 4, 5, 6, 7, 8",
+                    "subRequirementTypeId": 1
+                },
+            ]
+        },
+        {
+            "content": "Convidar um amigo para participar de uma atividade social de sua igreja ou da Associação/Missão.",
+            "requirementGroupId": 3,
+            "classId": 5
+        },
+        {
+            "content": "Participar de um projeto comunitário desde o planejamento, organização até a execução.",
+            "requirementGroupId": 3,
+            "classId": 5
+        },
+        {
+            "content": "Discutir como os jovens adventistas devem se relacionar com as pessoas nas diferentes situações do dia a dia, tais como:",
+            "requirementGroupId": 3,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Vizinhança",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Escola",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades sociais",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades recreativas",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Através de uma conversa em grupo ou avaliação pessoal, examinar suas atitudes em dois dos seguintes temas:",
+            "requirementGroupId": 4,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Autoestima.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Relacionamento familiar.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Finanças pessoais.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Pressão de grupo.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Preparar uma lista contendo cinco sugestões de atividades recreativas para ajudar pessoas com necessidades específicas e colaborar na organização d euma atividade para essas pessoas.",
+            "requirementGroupId": 4,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Temperança.",
+            "requirementGroupId": 5,
+            "classId": 5
+        },
+        {
+            "content": "Preparar um organograma da igreja local e relacionar as funções dos departamentos.",
+            "requirementGroupId": 6,
+            "classId": 5
+        },
+        {
+            "content": "Participar de dois programas envolvendo diferentes departamentos da igreja local.",
+            "requirementGroupId": 6,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Aventuras com Cristo.",
+            "requirementGroupId": 6,
+            "classId": 5
+        },
+        {
+            "content": "Recapitular a história de Nicodemos e relacioná-la com o ciclo de vida da lagarta ou borboleta, acrescentando um significado espiritual.",
+            "requirementGroupId": 7,
+            "classId": 5
+        },
+        {
+            "content": "Completar uma especialidade em estudo da natureza, não realizada anteriormente.",
+            "requirementGroupId": 7,
+            "classId": 5
+        },
+        {
+            "content": "Com um grupo de, no mínimo, quatro pessoas e com a presença de um conselheiro adulto e experiente, andar pelo menos 20 quilômetros numa área rural ou deserta, incluindo uma noite ao ar livre ou em barraca. Planejar a expedição em detalhes antes da saída. Durante a caminhada, efetuar anotações sobre o terreno, flora e fauna observados. Depois, usando as anotações, participar de uma discussão em grupo, dirigida por seu conselheiro.",
+            "requirementGroupId": 8,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Pioneirias.",
+            "requirementGroupId": 8,
+            "classId": 5
+        },
+        {
+            "content": "Completar uma especialidade não realizada anteriormente em uma das seguintes áreas:",
+            "requirementGroupId": 9,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Atividades missionárias e comunitárias",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades agrícolas e afins",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ciência e saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Habilidades domésticas",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Fazer uma apresentação escrita ou falada sobre o respeito que devemos ter com a Lei de Deus e as autoridades civis, enumerando 10 princípios de comportamento moral.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Acompanhar seu pastor ou ancião numa visita missionária ou estudo bíblico.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Testemunho juvenil.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Apresentar cinco atividades na natureza, para serem realizadas no sábado à tarde.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Com sua unidade, construir cinco móveis de acampamento e um portal para o clube.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Sob a supervisão de seu líder ou conselheiro, conversar em sua unidade ou clube sobre um dos seguintes temas:",
+            "requirementGroupId": 10,
+            "classId": 5,
+            "subRequirements": [
+                {
+                    "content": "Modéstia cristã.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Recreação.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Saúde.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Observância do sábado.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Demonstrar conhecimento para encontrar alimentos, através de plantas silvestres de sua região e saber diferenciá-las de plantas tóxicas/venenosas.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Demonstrar conhecimento quanto aos procedimentos necessários em caso de ferimentos por diferentes animais peçonhentos e não peçonhentos.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Demonstrar técnicas para percorrer trilhas em diferentes tipos de terrenos, como: desertos, florestas, pântanos e rios.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Ordem unida, caso não tenha sido realizada anteriormente.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+        {
+            "content": "Completar a especialidade de Vida silvestre.",
+            "requirementGroupId": 10,
+            "classId": 5
+        },
+    ]
+}
 
 guide_requirements = {}
 
@@ -1694,4 +2007,4 @@ def populate_db(connection, db_data):
         print(f"error line: {exc_tb.tb_lineno}")
 
 
-populate_db(connection, pioneer_requirements)
+populate_db(connection, hiker_requirements)
