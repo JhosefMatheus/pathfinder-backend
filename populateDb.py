@@ -1945,7 +1945,472 @@ hiker_requirements = {
     ]
 }
 
-guide_requirements = {}
+guide_requirements = {
+    "requirements": [
+        {
+            "content": "Ter, no mínimo, 15 anos de idade.",
+            "requirementGroupId": 1,
+            "classId": 6
+        },
+        {
+            "content": "Ser membro ativo do Clube de Desbravadores.",
+            "requirementGroupId": 1,
+            "classId": 6
+        },
+        {
+            "content": "Memorizar e explicar o Voto de Fidelidade à Bíblia.",
+            "requirementGroupId": 1,
+            "classId": 6
+        },
+        {
+            "content": "Ler o livro do Clube de Leitura do ano em curso e resumi-lo em uma página",
+            "requirementGroupId": 1,
+            "classId": 6
+        },
+        {
+            "content": "Ler o livro Nossa Herança.",
+            "requirementGroupId": 1,
+            "classId": 6
+        },
+        {
+            "content": "Memorizar e demonstrar o seu conhecimento:",
+            "requirementGroupId": 2,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "As 3 Mensagens Angélicas: Reveladas em Apocalipse 14:6-12.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "7 Igrejas: O nome das igrejas do Apocalipse.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Pedras preciosas: Quais as pedras preciosas dos 12 fundamentos da cidade santa - a nova Jerusalém.",
+                    "subRequirementTypeId": 1
+                },
+            ]
+        },
+        {
+            "content": "Ler e explicar os versos abaixo:",
+            "requirementGroupId": 2,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "1 Cor. 13",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Cron. 7:14",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Apoc. 22:18-20",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Tim. 4:6-7",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Rom. 8:38-39",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Mateus 6:33-34",
+                    "subRequirementTypeId": 2
+                },
+            ]
+        },
+        {
+            "content": "Descrever os dons espirituais mencionados nos de Paulo (Coríntios, Efésios, Filipenses) e para que a igreja recebe estes dons.",
+            "requirementGroupId": 2,
+            "classId": 6
+        },
+        {
+            "content": "Estudar a estrutura e serviço do santuário no Antigo Testamento e relacionar com o ministério pessoal de Jesus e a cruz.",
+            "requirementGroupId": 2,
+            "classId": 6
+        },
+        {
+            "content": "Ler e reunir três histórias de pioneiros adeventistas. Contar estas histórias na reunião do Clube, no culto JA ou na escola sabatina.",
+            "requirementGroupId": 2,
+            "classId": 6
+        },
+        {
+            "content": "Leitura bíblica:",
+            "requirementGroupId": 2,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "At 9:1-31, 9:32-43, 10, 11, 12, 13, 14, 16, 17:1-15, 17:16-34, 18, 19:1-22, 19:23-41, 20, 21:17-40, 22:1-16, 23, 24, 25, 26, 27, 28",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Rm 12, 13, 14",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Co 13",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Co 5:11-21, Co 11:16-33, 12:1-10",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Gl 5:16-26, 6:1-10",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ef 5:1-21, 6",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Fp 4",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Cl 3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Ts 4:13-18, 5",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Ts 2, 3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Tm 4:6-16, Tm 5:1-16, 6:11-21",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "2 Tm 2, 3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Fm",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Hb 11",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Tg 1, 3, 5:7-20",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Pe 1, 5:1-11",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Pe 3",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "1 Jo 2, 3, 4, 5",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Jd 1:17-25",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Ap 1, 2, 3, 7:9-17, 12, 13, 14, 19, 20, 21",
+                    "subRequirementTypeId": 2
+                }
+            ]
+        },
+        {
+            "content": "Ajudar a organizar e participar de uma das seguintes atividades:",
+            "requirementGroupId": 3,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Fazer uma visita de cortesia a uma pessoa doente.",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Adotar uma pessoa ou família em necessidade.",
+                    "subRequirementTypeId": 2
+                },
+                {
+                    "content": "Um projeto de sua escolha aprovado por seu líder.",
+                    "subRequirementTypeId": 2
+                },
+            ]
+        },
+        {
+            "content": "Discutir com sua unidade os métodos de evangelismo pessoal e colocar alguns princípios em prática.",
+            "requirementGroupId": 3,
+            "classId": 6
+        },
+        {
+            "content": "Asitir a uma palestra ou aula e examinar suas atitudes em relação a dois dos seguintes temas:",
+            "requirementGroupId": 4,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "A importância da escolha profissional.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Como se relacionar com os pais.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "A escolha da pessoa certa para namorar.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "O plano de Deus para o sexo.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Fazer uma apresentação, para os alunos do ensino fundamental, sobre os oito remédios naturais dados por Deus.",
+            "requirementGroupId": 5,
+            "classId": 6
+        },
+        {
+            "content": "Completar uma das seguintes atividades:",
+            "requirementGroupId": 5,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Escrever uma poesia ou artigo sobre saúde para ser divulgado em uma revista, boletim ou jornal da igreja.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Individualmente ou em grupo, organizar e participar de uma corrida ou atividade similar e apresentar com antecedência um programa de treinamento físico para este evento.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ler as páginas 102-125 do livro Temperança, de Ellen White, e apresentar em uma página ou mais, 10 textos selecionados da leitura.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Completar a especialidade de Nutrição ou liderar um gurpo para a especialidade de Cultura física.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Preparar um organograma da estrutura administrativa da Igreja Adventista em sua Divisão.",
+            "requirementGroupId": 6,
+            "classId": 6
+        },
+        {
+            "content": "Participar em um dos itens abaixo:",
+            "requirementGroupId": 6,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Curso para conselheiros",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Convenção de liderança da Associação/Missão",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "6 reuniões de diretoria do seu Clube",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Planejar e ensinar, no mínimo, dois requisitos de uma especialidade para um grupo ou unidade de desbravadores.",
+            "requirementGroupId": 6,
+            "classId": 6
+        },
+        {
+            "content": "Ler o capítulo 7 do livro O Desejado de Todas as Nações sobre a infância de Jesus. Apresentar para um grupo, clube ou unidades as lições encontradas, desmonstrando a importância que o estudo da natureza e ministêrio de Jesus.",
+            "requirementGroupId": 7,
+            "classId": 6
+        },
+        {
+            "content": "Completar uma das seguintes especialidades:",
+            "requirementGroupId": 7,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Ecologia.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Conservação ambiental.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Participar com sua unidade de um acampamento com estrutura de pioneiria, planejar o que deve ser levado e o que vai acontecer neste acampamento.",
+            "requirementGroupId": 8,
+            "classId": 6
+        },
+        {
+            "content": "Planejar, preparar e cozinhar três refeições ao ar livre.",
+            "requirementGroupId": 8,
+            "classId": 6
+        },
+        {
+            "content": "Construir e utilizar um móvel de acampamento em tamanho real, com nós e amarras.",
+            "requirementGroupId": 8,
+            "classId": 6
+        },
+        {
+            "content": "Completar uma especialidade, não realizada anteriormente, que possa ser contada para um dos Mestrados a seguir:",
+            "requirementGroupId": 8,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Aquática",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Esportes",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades recreativas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Vida campestre",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar uma especialidade, não realizada anteriormente, em uma das seguintes áreas:",
+            "requirementGroupId": 9,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Atividades recreativas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ciência e saúde",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Habilidades domésticas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Atividades profissionais",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar a especialidade de Mordomia.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Ler o livro O Maior Discurso de Cristo e escrever uma página sobre o efeito da leitura em sua vida.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Cumprir um dos seguintes itens:",
+            "requirementGroupId": 10,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Trazer dois amigos para assistir a duas diferentes reuniões da igreja.",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Ajudar a planejar e participar de, no mínimo, quatro domingos em uma série de evangelismo jovem.",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Escrever uma página ou apresentar uma palestra de como influenciar amigos para Cristo.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Observar durante o período de dois meses o trabalho dos diáconos, apresentando um relatório detalhado de suas atividades, contendo:",
+            "requirementGroupId": 10,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Cuidado da propriedade da igreja",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Cerimônia de lava-pés",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Cerimônia de batismo",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Recolhimento dos dízimos e ofertas",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar o mestrado em Vida campestre.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Projetar três tipos diferentes de abrigo, explicar seu uso e utilizar um deles em um acampamento.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Assistir a um seminário ou apresentar uma palestra sobre dois dos seguintes temas:",
+            "requirementGroupId": 10,
+            "classId": 6,
+            "subRequirements": [
+                {
+                    "content": "Aborto",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Builling",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Violência",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Drogas",
+                    "subRequirementTypeId": 1
+                },
+                {
+                    "content": "Doenças sexualmente transmissíveis",
+                    "subRequirementTypeId": 1
+                }
+            ]
+        },
+        {
+            "content": "Completar a especialidade de Liderança campestre.",
+            "requirementGroupId": 10,
+            "classId": 6
+        },
+        {
+            "content": "Completar a especialidade de Orçamento familiar.",
+            "requirementGroupId": 10,
+            "classId": 6
+        }
+    ]
+}
 
 def populate_db(connection, db_data):
     try:
@@ -1962,9 +2427,9 @@ def populate_db(connection, db_data):
             sub_requirements = requirement.get("subRequirements")
 
             print("inserindo requisito:")
-            print(f"conteúdo do requisito: {requirement_content}")
-            print(f"grupo do requisito: {requirement_group_id}")
-            print(f"classe do requisito: {requirement_class_id}")
+            print(f"\tconteúdo do requisito: {requirement_content}")
+            print(f"\tgrupo do requisito: {requirement_group_id}")
+            print(f"\tclasse do requisito: {requirement_class_id}")
 
             sql = """
                 insert into requirement (content, requirementGroupId, classId)
@@ -2007,4 +2472,4 @@ def populate_db(connection, db_data):
         print(f"error line: {exc_tb.tb_lineno}")
 
 
-populate_db(connection, hiker_requirements)
+populate_db(connection, guide_requirements)
