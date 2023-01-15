@@ -23,6 +23,7 @@ model Pathfinder {
   name String
   userId Int
   user User @relation(fields: [userId], references: [id])
+  requirementsPathfinders RequirementPathfinder[]
 }
 
 model Class {
@@ -46,6 +47,7 @@ model Requirement {
   requirementGroup RequirementGroup @relation(fields: [requirementGroupId], references: [id])
   class Class @relation(fields: [classId], references: [id])
   subrequirements Subrequirement[]
+  requirementsPathfinders RequirementPathfinder[]
 }
 
 model SubrequirementType {
@@ -60,5 +62,13 @@ model Subrequirement {
   subrequirementTypeId Int
   requirementId Int
   subrequirementType SubrequirementType @relation(fields: [subrequirementTypeId], references: [id])
+  requirement Requirement @relation(fields: [requirementId], references: [id])
+}
+
+model RequirementPathfinder {
+  id Int @id @default(autoincrement())
+  pathfinderId Int
+  requirementId Int
+  pathfinder Pathfinder @relation(fields: [pathfinderId], references: [id])
   requirement Requirement @relation(fields: [requirementId], references: [id])
 }
