@@ -1,5 +1,6 @@
-import { Controller, Get, Param, Res } from "@nestjs/common";
+import { Body, Controller, Get, Param, Post, Res } from "@nestjs/common";
 import { Response } from "express";
+import { SaveRequirementsPathfinderDto } from "./dto";
 import { IGetRequirementsPathfinderParams } from "./interface";
 import { RequirementPathfinderService } from "./requirementPathfinder.service";
 
@@ -22,6 +23,17 @@ export class RequirementPathfinderController {
 
         return response.status(401).json({
             message
+        });
+    }
+
+    @Post("requirementsPathfinder/save")
+    async saveRequirementsPathfinder(@Res() response: Response, @Body() saveRequirementsPathfinderDto: SaveRequirementsPathfinderDto): Promise<Response> {
+        const { requirementsPathfinder } = saveRequirementsPathfinderDto;
+
+        console.log(requirementsPathfinder);
+
+        return response.status(200).json({
+            message: "tudo ok!"
         });
     }
 }
