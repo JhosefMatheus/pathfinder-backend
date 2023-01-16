@@ -1,7 +1,15 @@
-import { RequirementPathfinder } from "@prisma/client";
 import { IsNotEmpty } from "class-validator";
+
+export interface RequirementPathfinderDto {
+    id?: number;
+    pathfinderId: string;
+    requirementId: number;
+}
 
 export class SaveRequirementsPathfinderDto {
     @IsNotEmpty()
-    requirementsPathfinder: RequirementPathfinder[];
+    addedRequirementsPathfinder: RequirementPathfinderDto[];
+    
+    @IsNotEmpty()
+    deletedRequirementsPathfinder: RequirementPathfinderDto[];
 }

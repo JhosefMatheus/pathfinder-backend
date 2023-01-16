@@ -28,12 +28,12 @@ export class RequirementPathfinderController {
 
     @Post("requirementsPathfinder/save")
     async saveRequirementsPathfinder(@Res() response: Response, @Body() saveRequirementsPathfinderDto: SaveRequirementsPathfinderDto): Promise<Response> {
-        const { requirementsPathfinder } = saveRequirementsPathfinderDto;
+        const { addedRequirementsPathfinder, deletedRequirementsPathfinder } = saveRequirementsPathfinderDto;
 
-        console.log(requirementsPathfinder);
+        await this.requirementPathfinderService.saveRequirementsPathfinder(addedRequirementsPathfinder, deletedRequirementsPathfinder);
 
         return response.status(200).json({
-            message: "tudo ok!"
+            message: "Requisitos do desbravador salvos com sucesso!"
         });
     }
 }
