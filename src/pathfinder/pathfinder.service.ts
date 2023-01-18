@@ -71,6 +71,23 @@ export class PathfinderService {
         }
 
         try {
+            await this.prismaService.requirementPathfinder.deleteMany({
+                where: {
+                    pathfinderId: parseInt(pathfinderId)
+                }
+            });
+        } catch (error) {
+            if (error instanceof Prisma.PrismaClientKnownRequestError) {
+                if (error.code === "P2025") {
+                    return {
+                        flag: false,
+                        message: "Desbravador inexistente."
+                    }
+                }
+            }
+        }
+
+        try {
             await this.prismaService.pathfinder.delete({
                 where: {
                     id: parseInt(pathfinderId)
