@@ -3,7 +3,7 @@ import { Response } from "express";
 import { PathfinderService } from "./pathfinder.service";
 import { AuthGuard } from "@nestjs/passport";
 import { Pathfinder } from "@prisma/client";
-import { IDeleteEditPathfinderParams, IGetCreatePathfindersParams } from "./interface";
+import { IDeleteEditPathfinderParams, IGetCreatePathfindersParams, IGetPathfinderClassesProgressParams } from "./interface";
 import { CreateEditPathfinderDto } from "./dto";
 
 @UseGuards(AuthGuard("jwt"))
@@ -19,6 +19,17 @@ export class PathfinderController {
 
         return response.status(200).json({
             pathfinders
+        });
+    }
+
+    @Get("classesProgress/:pathfinderId")
+    async getPathfinderClassesProgress(@Res() response: Response, @Param() params: IGetPathfinderClassesProgressParams): Promise<Response> {
+        const { pathfinderId } = params;
+
+         const classesProgress = await this.pathfinderService.getPathfinderClassesProgress(pathfinderId);
+
+        return response.status(200).json({
+            classesProgress
         });
     }
     

@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/prisma/prisma.service";
-import { Pathfinder, Prisma, User } from "@prisma/client";
-import { ICrudPathfinder } from "./interface";
+import { Pathfinder, Prisma, Requirement, RequirementPathfinder, User } from "@prisma/client";
+import { ICrudPathfinder, IGetPathfinderClassesProgressData } from "./interface";
 
 @Injectable()
 export class PathfinderService {
@@ -202,6 +202,49 @@ export class PathfinderService {
                     message: "Desbravador inexistente."
                 }
             }
+        }
+    }
+
+    private async getPathfinderClassProgress(pathfinderId: string, classId: number): Promise<number> {
+        const classRequirements: Requirement[] = await this.prismaService.requirement.findMany({
+            where: {
+                classId: {
+                    equals: classId
+                }
+            }
+        });
+
+        const pathfinderClassRequirements: RequirementPathfinder[] = await this.prismaService.requirementPathfinder.findMany({
+            where: {
+                AND: {
+                    pathfinderId: parseInt(pathfinderId),
+                    requirement: {
+                        classId: {
+                            equals: classId
+                        }
+                    }
+                }
+            }
+        });
+
+        return Math.floor((pathfinderClassRequirements.length/classRequirements.length)*100);
+    }
+
+    async getPathfinderClassesProgress(pathfinderId: string): Promise<IGetPathfinderClassesProgressData> {
+        const friendProgress = await this.getPathfinderClassProgress(pathfinderId, 1);
+        const companionProgress = await this.getPathfinderClassProgress(pathfinderId, 2);
+        const researcherProgress = await this.getPathfinderClassProgress(pathfinderId, 3);
+        const pioneerProgress = await this.getPathfinderClassProgress(pathfinderId, 4);
+        const hikerProgress = await this.getPathfinderClassProgress(pathfinderId, 5);
+        const guideProgress = await this.getPathfinderClassProgress(pathfinderId, 6);
+
+        return {
+            friendProgress,
+            companionProgress,
+            researcherProgress,
+            pioneerProgress,
+            hikerProgress,
+            guideProgress
         }
     }
 }
